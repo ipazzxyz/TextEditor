@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TextEditor</class>
+ <widget class="QMainWindow" name="TextEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TextEditor</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>510</y>
+      <width>771</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="insert">
+       <property name="text">
+        <string>insert</string>
+       </property>
+       <property name="shortcut">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="erase">
+       <property name="text">
+        <string>erase</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="replace">
+       <property name="text">
+        <string>replace</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="special">
+       <property name="text">
+        <string>special</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="special_select">
+       <property name="currentText">
+        <string/>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+       <property name="placeholderText">
+        <string>special</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>eraseLeadingZeros</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>eraseNonDecreasing</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>reduceRepetitiveAsterisk</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>eraseCurlyBrackets</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="input">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>611</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Text to input</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="n">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>400</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="placeholderText">
+     <string>N / l</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="status">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>560</y>
+      <width>391</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>237</red>
+          <green>51</green>
+          <blue>59</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>237</red>
+          <green>51</green>
+          <blue>59</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Source Code Pro</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>440</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QCheckBox" name="m_active">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="m">
+       <property name="inputMask">
+        <string/>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="placeholderText">
+        <string>M / r</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>611</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QCheckBox" name="input2_active">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="input2">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Text to replace</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="lines_cnt">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>751</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>560</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QPushButton" name="save">
+       <property name="text">
+        <string>save</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="load">
+       <property name="text">
+        <string>load</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextBrowser" name="data">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>771</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
